@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="header">
+      <h2>Librarian Panel</h2>
+    </div>
     <div class="container">
       <div class="sidebar">
-        <h2>Librarian Panel</h2>
         <ul>
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">My Profile</a></li>
@@ -36,99 +38,104 @@
         <h1>Add Book</h1>
         <div class="book-form">
           <form>
-            <div class="info info-1">
-              <label for="ID">ID:</label>
-              <input type="text" id="ID" name="ID" placeholder="Enter ID" />
+            <div class="form-row">
+              <div class="info">
+                <label for="ID">ID:</label>
+                <input type="text" id="ID" name="ID" placeholder="Enter ID" />
+              </div>
+              <div class="info">
+                <label for="title">Book Title:</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Enter Book Title"
+                />
+              </div>
             </div>
 
-            <div class="info info-2">
-              <label for="title">Book Title:</label>
-              <input
-                type="text"
-                id="title"
-                name="title"
-                placeholder="Enter Book Title"
-              />
+            <div class="form-row">
+              <div class="info">
+                <label for="author">Author Name:</label>
+                <input
+                  type="text"
+                  id="author"
+                  name="author"
+                  placeholder="Enter Author Name"
+                />
+              </div>
+              <div class="info">
+                <label for="publisher-name">Publisher Name:</label>
+                <input
+                  type="text"
+                  id="publisher-name"
+                  name="publisher-name"
+                  placeholder="Enter Publisher Name"
+                />
+              </div>
             </div>
 
-            <div class="info info-3">
-              <label for="author">Author Name:</label>
-              <input
-                type="text"
-                id="author"
-                name="author"
-                placeholder="Enter Author Name"
-              />
+            <div class="form-row">
+              <div class="info">
+                <label for="pubiccation-year">Publication Year:</label>
+                <input
+                  type="number"
+                  id="pubiccation-year"
+                  name="pubiccation-year"
+                  placeholder="Enter Publication Year"
+                />
+              </div>
+              <div class="info">
+                <label for="page-count">Page Count:</label>
+                <input
+                  type="number"
+                  id="page-count"
+                  name="page-count"
+                  placeholder="Enter Page Count"
+                />
+              </div>
             </div>
 
-            <div class="info info-4">
-              <label for="publisher-name">Pulisher Name:</label>
-              <input
-                type="text"
-                id="publisher-name"
-                name="publisher-name"
-                placeholder="Enter Pulisher Name"
-              />
+            <div class="form-row">
+              <div class="info">
+                <label for="number-of-copy">Number of Copy:</label>
+                <input
+                  type="number"
+                  id="number-of-copy"
+                  name="number-of-copy"
+                  placeholder="Enter Number of Copy"
+                />
+              </div>
+              <div class="info">
+                <label for="number-available">Number Available:</label>
+                <input
+                  type="number"
+                  id="number-available"
+                  name="number-available"
+                  placeholder="Enter Number Available"
+                />
+              </div>
             </div>
 
-            <div class="info info-5">
-              <label for="pubiccation-year">Pubiccation Year:</label>
-              <input
-                type="number"
-                id="pubiccation-year"
-                name="pubiccation-year"
-                placeholder="Enter Pubiccation Year"
-              />
-            </div>
-
-            <div class="info info-6">
-              <label for="page-count">Page count:</label>
-              <input
-                type="number"
-                id="page-count"
-                name="page-count"
-                placeholder="Enter Page count"
-              />
-            </div>
-
-            <div class="info info-7">
-              <label for="number-of-copy">Number of copy:</label>
-              <input
-                type="number"
-                id="number-of-copy"
-                name="number-of-copy"
-                placeholder="Enter Number of copy"
-              />
-            </div>
-
-            <div class="info info-8">
-              <label for="number-available">NumberAvailable:</label>
-              <input
-                type="number"
-                id="number-available"
-                name="number-available"
-                placeholder="Enter NumberAvailable"
-              />
-            </div>
-
-            <div class="info info-9">
-              <label for="ICollection">ICollection:</label>
-              <input
-                type="text"
-                id="ICollection"
-                name="ICollection"
-                placeholder="Enter ICollection"
-              />
-            </div>
-
-            <div class="info info-10">
-              <label for="location">Location:</label>
-              <input
-                type="text"
-                id="location"
-                name="location"
-                placeholder="Enter Location"
-              />
+            <div class="form-row">
+              <div class="info">
+                <label for="ICollection">ICollection:</label>
+                <input
+                  type="text"
+                  id="ICollection"
+                  name="ICollection"
+                  placeholder="Enter ICollection"
+                />
+              </div>
+              <div class="info">
+                <label for="location">Location:</label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="Enter Location"
+                />
+              </div>
             </div>
 
             <button type="submit">Add Book</button>
